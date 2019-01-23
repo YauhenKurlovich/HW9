@@ -19,6 +19,10 @@ sap.ui.require([
 
         var oView = new XMLView({
 			viewName: "sap.ui.demo.view.App"
+        }).placeAt("content");
+        
+        var oView2 = new XMLView({
+			viewName: "sap.ui.demo.view.App2"
 		}).placeAt("content");
 
 		sap.ui.getCore().getMessageManager().registerObject(oView, true);

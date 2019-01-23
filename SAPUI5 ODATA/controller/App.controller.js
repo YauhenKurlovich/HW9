@@ -9,7 +9,18 @@ sap.ui.define([
 			oUIControl = this.byId("peoplesExtended").clone(sId);
 
 			return oUIControl;
-		}
+        },
+        onItemSelected: function(oEvent) {
+            var oSelectedItem = oEvent.getSource();
+         
+            var oContext = oSelectedItem.getBindingContext("peoples");
+           
+            var sPath = oContext.getPath();
+       
+			var oProductDetailsPanel = this.byId("productDetailsPanel");
+			oProductDetailsPanel.bindElement({ path: sPath, model: "peoples" });
+
+        }
 
 	});
 });

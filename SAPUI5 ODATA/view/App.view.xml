@@ -18,10 +18,25 @@
 					<ObjectListItem
 						id="peoplesExtended"
 						title="FirstName:{peoples>FirstName}  LastName:{peoples>LastName} Gender:{peoples>Gender}"
+                        press=".onItemSelected"
+                        type="Active"
 						>
 					</ObjectListItem>
-				</dependents>
+                    </dependents>
+			
 			</List>
 		</content>
 	</Panel>
+     <Panel id="productDetailsPanel" headerText="{i18n>panelDetailsHeaderText}" class="sapUiResponsiveMargin" width="auto">
+    <l:Grid defaultSpan="L3 M6 S12" containerQuery="true">
+        <Label text="{i18n>FirstName}:" />
+        <Input value="{peoples>FirstName}" />
+        
+        <Label text="{i18n>LastName}:" />
+        <Input value="{peoples>LastName}" />
+
+        <Label text="{i18n>Gender}:" />
+        <Input value="{peoples>Gender}" />
+    </l:Grid>    
+  </Panel>
 </mvc:View>
