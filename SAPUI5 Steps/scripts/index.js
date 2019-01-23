@@ -9,8 +9,8 @@ sap.ui.require([
 	sap.ui.getCore().attachInit(function () {
 		// Create a JSON model from an object literal
 		var oModel = new JSONModel({
-			firstName: "Eugene",
-			lastName: "Kurlovich",
+			firstName: "yauhen",
+			lastName: "kurlovich",
             enabled: true,
             address: {
 				street: "Dietmar-Hopp-Allee 16",
