@@ -11,7 +11,13 @@ sap.ui.require([
 		var oModel = new JSONModel({
 			firstName: "Eugene",
 			lastName: "Kurlovich",
-			enabled: true
+            enabled: true,
+            address: {
+				street: "Dietmar-Hopp-Allee 16",
+				city: "Walldorf",
+				zip: "69190",
+				country: "Germany"
+			}
 		});
 
 		// Assign the model object to the SAPUI5 core
@@ -19,7 +25,7 @@ sap.ui.require([
 
 		// Create a resource bundle for language specific texts
 		var oResourceModel = new ResourceModel({
-			bundleName: "sap.ui.demo.i18n.i18n_de"
+			bundleName: "sap.ui.demo.i18n.i18n"
 		});
 
 		// Assign the model object to the SAPUI5 core using the name "i18n"
