@@ -1,0 +1,27 @@
+<mvc:View
+    controllerName="sap.ui.demo.controller.App"
+	xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+
+    
+ 		<Panel headerText="{i18n>panel1HeaderText}" class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<List
+				id="PeoplesList"
+				headerText="{i18n>peopleListTitle}"
+				items="{
+					path: 'peoples>/value',
+					factory: '.peoplesListFactory'
+				}">
+					<dependents>
+					<ObjectListItem
+						id="peoplesExtended"
+						title="FirstName:{peoples>FirstName}  LastName:{peoples>LastName} Gender:{peoples>Gender}"
+						>
+					</ObjectListItem>
+				</dependents>
+			</List>
+		</content>
+	</Panel>
+</mvc:View>
