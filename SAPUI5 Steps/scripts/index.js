@@ -19,7 +19,7 @@ sap.ui.require([
 
 		// Create a resource bundle for language specific texts
 		var oResourceModel = new ResourceModel({
-			bundleName: "sap.ui.demo.i18n.i18n"
+			bundleName: "sap.ui.demo.i18n.i18n_de"
 		});
 
 		// Assign the model object to the SAPUI5 core using the name "i18n"
